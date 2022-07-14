@@ -1,0 +1,53 @@
+div.news.container-fluid
+	.container.px-0.px-md-3
+		.row
+			div.col-lg-12.d-flex.flex-row.flex-wrap.align-items-center.search
+				.col-sm-6
+					button.btn.btn-secondary.datePicker() Choisir une date
+						i(class="fas fa-angle-down")
+				div.pr-sm-3.ml-sm-auto.col-12.col-sm-auto.pl-sm-0
+					form.w-100(action="")
+						div.input-group
+							input(
+								type="text"
+								class="form-control"
+								name="searchArticle"
+								id="searchArticle"
+								placeholder="Rechercher"
+							)
+							.input-group-append
+								button.searchBtn(type='submit')
+									i(data-feather="search")
+			.content.col-lg-12.px-0.d-flex.flex-row.flex-wrap.justify-content-center
+				div.w-100.d-flex.flex-row.flex-wrap.articlesBlock
+					- var i = 0
+					while i < 2
+						a.col-lg-4.col-md-6(href="/agenda.html")
+							article.items.actu.col-lg-12.px-0
+								img(src="img/IMG_9401.png", alt="")
+								header.col-lg-11.px-0
+									span.tags Actualités
+									h3 Real Factory - Factory / Industrial / Construction Responsive WordPress Theme
+									<time datetime="28-09-2020">28 Septembre</time>
+						a.col-lg-4.col-md-6(href="/agenda.html")
+							article.items.agenda.col-lg-12.px-0
+								img(src="img/IMG_9401.png", alt="")
+								div.dateInfos
+									span.days 22-26
+									span.month June
+								header.col-lg-11.px-0
+									span.tags Agenda
+									h3 Real Factory - Factory / Industrial / Construction Responsive WordPress Theme
+									<time datetime="28-09-2020">28 Septembre</time>
+						a.col-lg-4.col-md-6(href="/agenda.html")
+							article.items.agenda.col-lg-12.px-0
+								img(src="img/IMG_9401.png", alt="")
+								div.dateInfos
+									span.days 22-26
+									span.month June
+								header.col-lg-11.px-0
+									span.tags Agenda
+									h3 Real Factory - Factory / Industrial / Construction Responsive WordPress Theme
+									<time datetime="28-09-2020">28 Septembre</time>
+						- i++
+				a.btn.btn-primary.btn-large(href="") Charger plus

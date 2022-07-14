@@ -1,0 +1,29 @@
+section.container-fluid.slider
+	.container.h-100
+		.row.h-100.align-items-center
+			header.col-lg-12.position-relative
+				div.slideItem.active
+					span.badge.badge-secondary.rounded-0 500 à 900T
+					h2 Trax
+						sup &copy;
+				div.slideItem
+					span.badge.badge-secondary.rounded-0 300 à 600T
+					h2 .Konkest
+				div.slideItem
+					span.badge.badge-secondary.rounded-0 500 à 1000T
+					h2 .Mobile
+			footer.col-lg-12.px-0.d-flex.flex-row.flex-wrap.align-items-center.justify-content-center
+				.container-fluid
+					.row.align-items-center.justify-content-lg-between.justify-content-center
+							div.progressBar.d-flex.flex-row.flex-wrap.align-items-center.justify-content-center.order-xl-0.order-1(
+								style="--progressValue: 50%;"
+							)
+								span.from 1
+								span.bar
+								span.to 5
+							div.arrow.order-xl-1.order-0
+								button.btn.btn-transparent#prev()
+									img.w-100(src="img/arrow.svg", alt="")
+								button.btn.btn-transparent#next()
+									img.w-100(src="img/arrow.svg", alt="")
+	canvas

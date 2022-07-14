@@ -1,0 +1,25 @@
+section.products.container-fluid
+	header.container
+		.row.align-items-center.h-100
+			.col-lg-6.col-6.px-0
+				span.smallTitle Le groupe
+					i.icon-up
+				h2 Nos produits
+			.col-lg-6.col-6.d-flex.flex-box.flex-wrap.justify-content-end
+				a.btn.btn-secondary.btn-large(href="") Notre gamme
+	.content.row
+		-var i = 0
+		-var title = ['Cisailles', 'Presses', 'Broyeurs']
+		while i < 3
+			a.col-lg-4.d-flex.flex-row.flex-wrap.productItem(
+				href=""
+				style='background-image: url(img/Transport0'+(i+1)+'.png);'
+			)
+				div.col-lg-12
+					span.btn.btn-secondary Produit
+				div.col-lg-12.mt-auto.blockContent
+					h3 #{title[i]}
+					p Depuis sa création, le nom de Lefort est, partout dans le monde, synonyme d’excellence en matière d’équipement pour le recyclage.
+					div.footer
+						span.btn.btn-primary.btn-small(href="") En détails
+			- i++

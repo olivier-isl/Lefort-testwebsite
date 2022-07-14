@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="/css/fonts.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+		script(src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
+		script(src="scripts/vendor/jquery-3.5.1.min.js")
+		script(src="scripts/vendor/popper.min.js")
+		script(src="scripts/vendor/bootstrap.min.js")
+		title Agenda | LEFORT | Scrap Shear Baler
+	body.agendas
+		include ../components/header.pug
+		main.agendas
+			include ../components/agendas/top.pug
+			include ../components/agendas/filter.pug
+			include ../components/agendas/news.pug
+		include ../components/footer.pug
+		include ../components/script.pug

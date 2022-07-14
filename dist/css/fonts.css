@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../assets/fonts/SFProDisplay-Light.eot');
+    src: url('../assets/fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('../assets/fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../assets/fonts/SharpGroteskMedium20-Regular.eot');
+    src: url('../assets/fonts/SharpGroteskMedium20-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SharpGroteskMedium20-Regular.woff2') format('woff2'),
+        url('../assets/fonts/SharpGroteskMedium20-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../assets/fonts/SharpGroteskBook20-Regular.eot');
+    src: url('../assets/fonts/SharpGroteskBook20-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SharpGroteskBook20-Regular.woff2') format('woff2'),
+        url('../assets/fonts/SharpGroteskBook20-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../assets/fonts/SFProDisplay-Regular.eot');
+    src: url('../assets/fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../assets/fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../assets/fonts/SharpGroteskThin20-Regular.eot');
+    src: url('../assets/fonts/SharpGroteskThin20-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SharpGroteskThin20-Regular.woff2') format('woff2'),
+        url('../assets/fonts/SharpGroteskThin20-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

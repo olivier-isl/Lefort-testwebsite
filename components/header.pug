@@ -1,0 +1,76 @@
+//- In 'includes' all paths to assets should be relative to the index.pug file,
+//- like so './images/image.jpg',
+//- and not '../images/image.jpg'
+
+div.container-fluid.header
+		div.row.justify-content-between
+			header.d-flex.flex-row.flex-wrap.align-items-center.justify-content-center
+				a(href="/")
+					h1.logo Lefort
+			div.d-xl-none.d-flex.flex-row.flex-wrap.align-items-center.align-content-start
+				button.dropdown-toggle.btn.btn-transparent.py-0.text-light(
+					type="button"
+					id="dropdownLang"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				)
+					<img width="24" src="img/flags/16/fr_16.png">
+				div(
+					class="dropdown-menu dropdown-menu-right"
+					aria-labelledby="dropdownMenuButton"
+				)
+					a(class="dropdown-item" href="#") <img width="24" src="img/flags/16/nl_16.png"> Néerlandais
+					a(class="dropdown-item" href="#") <img width="24" src="img/flags/16/de_16.png"> Allemand
+					a(class="dropdown-item" href="#") <img width="24" src="img/flags/16/us_16.png"> Anglais
+				button(class="hamburger hamburger--elastic" type="button"
+					aria-label="Menu" aria-controls="navigation")
+					span(class="hamburger-box")
+						span(class="hamburger-inner")
+			nav.d-flex.flex-row.flex-wrap.align-items-start.align-content-start.col
+				ul.list-unstyled.d-none.d-xl-flex.flex-row.flex-wrap.col-lg-12.justify-content-end.topNav
+					li
+						a(href="") News.
+					li
+						a(href="/agendas.html") Agenda.
+					li
+						a(href="") Carrière.
+					li
+						a(href="") Vidéos.
+					li
+						a(href="") Contact.
+					li.lang.dropdown
+						button.dropdown-toggle.btn.btn-transparent.py-0.text-light(
+							type="button"
+							id="dropdownLang"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						)
+							<img width="24" src="img/flags/16/fr_16.png">
+						div(
+							class="dropdown-menu"
+							aria-labelledby="dropdownMenuButton"
+						)
+							a(class="dropdown-item" href="#") <img width="24" src="img/flags/16/nl_16.png"> Néerlandais
+							a(class="dropdown-item" href="#") <img width="24" src="img/flags/16/de_16.png"> Allemand
+							a(class="dropdown-item" href="#") <img width="24" src="img/flags/16/us_16.png"> Anglais
+
+				ul.mainNav.list-unstyled.d-flex.flex-xl-row.flex-column.flex-wrap.col-lg-12.justify-content-xl-end.justify-content-start
+					li
+						a(href="") Lefor Groupe
+					li
+						a(href="") Cisailles
+					li
+						a(href="") Presses
+					li
+						a(href="") Broyeurs
+					li
+						a(href="") Attachements
+					li
+						a(href="") Services
+					li
+						a(href="") Occasion
+					li.search
+						a(href="")
+							i(data-feather="search")

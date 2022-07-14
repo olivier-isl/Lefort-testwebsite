@@ -1,0 +1,46 @@
+doctype html
+html(lang="en").noOverflow
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="/css/fonts.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+		script(src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
+		script(src="scripts/vendor/jquery-3.5.1.min.js")
+		script(src="scripts/vendor/popper.min.js")
+		script(src="scripts/vendor/bootstrap.min.js")
+		title LEFORT | Scrap Shears and Balers
+	body
+		include ../components/header.pug
+		main.home
+			include ../components/index/slider.pug
+			div.container-fluid
+				div.row
+					include ../components/index/histoire.pug
+					include ../components/index/access.pug
+			
+			include ../components/index/data.pug
+			include ../components/index/product.pug
+			include ../components/index/reseau.pug
+			div.container-fluid
+				.row
+					include ../components/index/videos.pug
+					include ../components/index/brochures.pug
+					
+			include ../components/index/news.pug
+		include ../components/footer.pug
+		div.loading
+			div
+			div
+				img(src="./img/logo.svg", alt="")
+			div
+		include ../components/script.pug
+		script(src="scripts/canvas.js")
+		script.
+			(() => {
+				setTimeout(function(){
+					document.querySelector('html').classList.remove('noOverflow')
+					document.querySelector('.loading').remove()
+				}, 2600)
+			})()

@@ -1,0 +1,316 @@
+body.agendas {
+	>.header{
+		padding-top: 0px;
+		header {
+			padding: 15px;
+			background-color: white;
+			@include media-breakpoint-up(xl) {
+				padding: 0;
+				width: 224px;
+				width: clamp(calc(99px + 30px), 11.666666666666666vw,224px);
+				height: 229px;
+			}
+		}
+	}
+}
+main.agendas {
+	background-color: #F0F0F0;
+	section.top {
+		position: relative;
+		padding-top: 140px;
+		@include media-breakpoint-up(xl) {
+			padding-top: 0;
+			height: 695px;
+		}
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding-bottom: 50px;
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 150px;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $secondary;
+			opacity: 0.8;
+		}
+		.tags {
+			font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 10px;
+			text-transform: uppercase;
+			background-color: #1C252C;
+			color:white;
+			border-radius: 0px;
+			padding: 9px 10px 7px 10px;
+		}
+		a {
+			color: white;
+			font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1609 - 576)));
+			@include media-breakpoint-down(sm) {
+				font-size: 16px;
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: 20px;
+			}
+			font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+			font-style: normal;
+			font-weight: 200;
+		}
+		h2 {
+			margin-top: 15px;
+			color: white;
+			font-family: 'Sharp Grotesk', Helvetica, Arial, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 1.5;
+
+			font-size: calc(20px + (51 - 20) * ((100vw - 320px) / (1609 - 576)));
+			@include media-breakpoint-down(sm) {
+				font-size: 20px;
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: 51px;
+			}
+			
+		}
+		time {
+			color: $primary;
+			font-size: 15px;
+			font-family: 'Sharp Grotesk', Helvetica, Arial, sans-serif;
+			font-weight: normal;
+			font-style: normal;
+		}
+		footer {
+			margin-top: 50px;
+		}
+	}
+
+	div.filter {
+		position: relative;
+		@include media-breakpoint-up(lg) {
+			transform: translate3d(0, -50%, 0);
+		}
+		background-color: $primary;
+		ul {
+			li {
+				position: relative;
+				flex: 0 0 50%;
+				padding-bottom: 15px;
+				@include media-breakpoint-up(sm) {
+					flex: 0 0 50%;
+				}
+				@include media-breakpoint-up(md) {
+					flex: 0 0 calc(100% / 3);
+				}
+				@include media-breakpoint-up(lg) {
+					flex: 0 0 25%;
+				}
+				@include media-breakpoint-up(xl) {
+					flex: 0 0 20%;
+				}
+				&:not(:last-child) {
+					&:after {
+						position: absolute;
+						right: 25%;
+						content:"";
+						width: 1px;
+						height: 32px;
+						background-color: #F3803D;
+						top: 50%;
+						transform: translate3d(0%,-50%,0);
+					}
+				}
+				&.active {
+					a{
+						text-decoration: underline;
+					}
+				}
+			}
+			a {
+				color: white;
+				font-size: calc(16px + (31 - 16) * ((100vw - 320px) / (1609 - 576)));
+				@include media-breakpoint-down(sm) {
+					font-size: 16px;
+				}
+				@include media-breakpoint-up(lg) {
+					font-size: 31px;
+				}
+				font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				font-style: normal;
+				&:before {
+					color: white;
+				}
+			}
+		}
+	}
+
+	div.news {
+		position: relative;
+		padding-top: 42px; 
+		padding-bottom: 88px;
+		@include media-breakpoint-up(lg) {
+			padding-top: 42px;
+			padding-bottom: 198px;
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(img/icon.svg);
+			background-size: 554px;
+			background-repeat: no-repeat;
+			@include media-breakpoint-down(sm) {
+				background-attachment: fixed;
+			}
+			background-position: calc(100% + 200px) 80%;
+			filter: invert(46%) sepia(64%) saturate(7075%) hue-rotate(9deg) brightness(102%) contrast(102%);
+			opacity: 0.12;
+		}
+		&.reverse {
+			color: white;
+		}
+		.datePicker {
+			@include media-breakpoint-down(xs) {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+			i {
+				margin-left: 1rem;
+			}
+		}
+		.search {
+			.input-group {
+				padding-bottom: 6px;
+				border-bottom: 1px solid #1F2428;
+				@include media-breakpoint-down(lg) {
+					width: 100%;
+				}
+				input[type="text"] {
+					background: transparent;
+					border: 0;
+				}
+			}
+			.searchBtn {
+				width: 36px;
+				height: 36px;
+				background-color: #363B40;
+				border-radius: 100%;
+				display:flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				padding: 0;
+				border: 0;
+				svg {
+					width: 15px;
+					height: 15px;
+					stroke-width: 3;
+					stroke: white;
+				}
+			}
+		}
+		.content {
+			margin-top: 46px;
+			a {
+				position: relative;
+				margin-bottom: 75px;
+				&:hover {
+					color: #000000;
+					text-decoration: none;
+					.tags {
+						color: #828282;
+						text-decoration: none;
+					}
+					h3 {
+						text-decoration: none;
+						color: black;
+					}
+					time{
+						text-decoration: none;
+						color: $primary;
+					}
+				}
+			}
+			img {
+				@include media-breakpoint-down(xl) {
+					width: 100%;
+				}
+			}
+			.dateInfos {
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $primary;
+				color: white;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				width: 91px;
+				height: 91px;
+				span {
+					color: inherit;
+					text-transform: uppercase;
+
+				}
+			}
+			header {
+				margin-top: 33px;
+				.tags {
+					font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+					font-weight: normal;
+					font-style: normal;
+					font-size: 10px;
+					text-transform: uppercase;
+					background-color: #1C252C;
+					color:white;
+					border-radius: 0px;
+					padding: 9px 10px 7px 10px;
+				}
+				h3 {
+					margin-top: 21px;
+					font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+					font-weight: normal;
+					font-style: normal;
+					font-size: calc(18px + (21 - 18) * ((100vw - 320px) / (1609 - 576)));
+					@include media-breakpoint-down(sm) {
+						font-size: 18px;
+					}
+					@include media-breakpoint-up(lg) {
+						font-size: 21px;
+					}
+					padding-bottom: 30px;
+					@include media-breakpoint-up(xl) {
+						padding-bottom: 56px;
+					}
+					border-bottom: 1px solid #DDDDDD;
+					margin-bottom: 8px;
+					color: black;
+				}
+				time {
+					color: $primary;
+					font-size: 15px;
+					font-family: 'Sharp Grotesk', Helvetica, Arial, sans-serif;
+					font-weight: normal;
+					font-style: normal;
+				}
+			}
+		}
+	}
+}
+
